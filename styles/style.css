@@ -1,0 +1,335 @@
+
+body{
+    background-color: #5AAB03;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Baskerville', 'Tahoma';
+    color: #232324;
+    position: relative;
+}
+
+
+.titlePage::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60vw;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right, #5AAB03, rgba(0, 0, 0, 0)),
+    url("img/bg1.jpeg");
+    background-size: cover;
+    z-index: -1;
+    margin: 0;
+    padding:0;
+    border: none;
+}
+
+.titlePage{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleCont{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleCont h1{
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.9em;
+    color: #ede9e1;
+    text-shadow: 2px 0 0 black;
+    margin: 0;
+}
+
+.titleCont p{
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 0 0 black;
+    margin: 0;
+    border-bottom: 3px solid #ede9e1;
+    margin-top: 3%;
+    padding-bottom: 20%;
+    
+}
+
+.titleCont button{
+    width: 100%;
+    padding: 20px;
+    background-color: #E6D3F3;
+    color: #403a4d;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button:hover, button:active{
+    cursor: pointer;
+}
+
+.titleCont button:hover{
+    background-color: #ffffff;
+}
+
+.titleCont button:active{
+    background-color: #5AAB03;
+    color: white;
+}
+
+.titleCont a{
+    margin-top: 5%;
+    width: 50%;
+}
+
+#info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ede9e1;
+    margin: 0;
+    padding:0;
+}
+
+#info h1{
+    font-size: 50px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: contain;
+    color: #5AAB03;
+    
+}
+
+.info1{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% 30% 40%;
+}
+
+.info2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 30% 30%;
+}
+
+.info1 p, .info2 p{
+    text-align: justify;
+    padding: 3%;
+}
+
+.info1 img{
+    width: 97%;
+    height: 100%;
+    padding: 0 0 0 3%;
+}
+
+.infoHeader{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.info2 img{
+    width: 97%;
+    height: 94%;
+    padding: 6% 3% 0 0;
+}
+
+#recipe{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #ede9e1;
+    margin: 0;
+    padding: 10vh 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.Gridtitle{
+    font-size: 50px;
+    margin: auto;
+    padding: 5%;
+    width: 90%;
+    background-color: #5AAB03;
+    color: white;
+    text-align: center;
+}
+
+.recipeGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 5vh;
+}
+
+.recipeCont{
+    width: 90%;
+    height: 30vh;
+    background-color: #dfffd583;
+    margin: 3vh 5%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.recipeCont img{
+    height: 100%;
+    width: 40%;
+    border-radius: 50px 0 0 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.recipeContent{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 50px 50px 0;
+}
+
+.recipeDes{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 65%;
+    margin: 2.5% 5%;
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+
+.recButtonCont{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 25%;
+    margin: 0;
+    padding: 2.5% 5%;
+}
+
+.recipeDes p{
+    width: 100%;
+    height: 70%;;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    
+    font-size: 12px;
+}
+
+.recipeDes h1{
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    color: #353336;
+}
+
+.recButtonCont button{
+    width: 40%;
+    border-radius: 40px;
+    padding: 5px 5px;
+    background-color: #46ff15;
+}
+
+.recButtonCont button:hover{
+    background-color: #a5ff80;
+}
+
+.recButtonCont button:active{
+    background-color: #1eca00;
+}
+
+#procedure{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    visibility: hidden;
+}
+
+.main{
+    width: 80%;
+    height: 90vh;
+    margin: 5vh 10%;
+    padding: 0;
+    overflow-x: scroll;
+    position: relative;
+    background-color: #ede9e1;
+    padding-bottom: 10vh;
+}
+
+#closeButton{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    background-color: #5AAB03;
+    margin-top: 3vh;
+    margin-right: 7%;
+    border-radius: 50%;
+}
+
+#dishTitle{
+    font-size: 30px;
+    text-align: center;
+    background-color: #5AAB03;
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
+
+#dishImg{
+    width: 80%;
+    height: 60vh;
+    margin: 5vh 10%;
+}
+
+.mainH1{
+    text-align: center;
+    font-size: 20px;
+    color: #5AAB03;
+    margin: 3vh 0;
+}
+
+#ingredients, #procedures{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #5AAB03;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
